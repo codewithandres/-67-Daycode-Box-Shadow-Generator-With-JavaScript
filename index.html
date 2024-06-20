@@ -18,7 +18,7 @@
         </div>
 
         <div id="controls">
-            <div class="blue-section">
+            <div class="value-section">
 
                 <label for="h-offet">Horizontal Offset :</label>
                 <input type="range" id="h-offet" min="-50" max="50" value="30">
@@ -28,6 +28,10 @@
 
                 <label for="spred">Spred :</label>
                 <input type="range" id="spred" min="0" max="50" value="0">
+
+                <label for="blur">blur :</label>
+                <input type="range" id="blur" min="0" max="50" value="30">
+
             </div>
 
             <div class="controls-section">
@@ -39,8 +43,10 @@
 
             <div class="code-container">
                 <textarea id="code" readonly></textarea>
-                <button id="copy-button">Copy button</button>
-                <button id="rest-button">Reset</button>
+                <div class="button">
+                    <button id="copy-button">Copy button</button>
+                    <button id="rest-button">Reset</button>
+                </div>
             </div>
         </div>
     </div>
