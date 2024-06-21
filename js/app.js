@@ -1,20 +1,20 @@
 
 const box = document.getElementById('box');
-const hOffsetInput = document.getElementById('h-offet');
+const hOffsetInput = document.getElementById('h-offset');
 const vOffsetInput = document.getElementById('v-offset');
 const blurInput = document.getElementById('blur');
 const spreadInput = document.getElementById('spread');
 const colorInput = document.getElementById('color');
 const codeTextarea = document.getElementById('code');
 const copyButton = document.getElementById('copy-button');
-const resetButton = document.getElementById('rest-button');
+const resetButton = document.getElementById('reset-button');
 
 const updateBoxShadow = () => {
     const hOffset = `${hOffsetInput.value}px`;
-    const vOffset = `${vOffsetInput}px`;
+    const vOffset = `${vOffsetInput.value}px`;
     const blur = `${blurInput.value}px`;
-    const spread = `${spreadInput.value}`;
-    const color = `${colorInput.value}px`;
+    const spread = `${spreadInput.value}px`;
+    const color = `${colorInput.value}`;
 
     const boxShadowValues = `${hOffset} ${vOffset} ${blur} ${spread} ${color}`;
 
