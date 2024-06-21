@@ -12,43 +12,43 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="box-cotainer">
-            <div class="box"></div>
+    <div class="box-container">
+        <div id="box"></div>
+    </div>
+
+    <div id="controls">
+        <div class="value-section">
+            <label for="h-offset">Horizontal Offset :</label>
+            <input type="range" id="h-offset" min="-50" max="50" value="30">
+
+            <label for="v-offset">Vertical Offset :</label>
+            <input type="range" id="v-offset" min="-50" max="50" value="30">
+
+            <label for="blur">Blur :</label>
+            <input type="range" id="blur" min="0" max="50" value="30">
+
+            <label for="spread">Spread :</label>
+            <input type="range" id="spread" min="0" max="50" value="0">
+
+
         </div>
-
-        <div id="controls">
-            <div class="value-section">
-
-                <label for="h-offet">Horizontal Offset :</label>
-                <input type="range" id="h-offet" min="-50" max="50" value="30">
-
-                <label for="v-offset">Vertical Offset :</label>
-                <input type="range" id="v-offset" min="50" max="50" value="30">
-
-                <label for="spred">Spred :</label>
-                <input type="range" id="spred" min="0" max="50" value="0">
-
-                <label for="blur">blur :</label>
-                <input type="range" id="blur" min="0" max="50" value="30">
-
+        <div class="controler-section">
+            <div class="color-part">
+                <label for="color">Color: </label>
+                <input type="color" id="color" value="#291165">
             </div>
 
-            <div class="controls-section">
-                <div class="color-part">
-                    <label for="color">color :</label>
-                    <input type="color" value="#291165" id="color">
-                </div>
-            </div>
-
-            <div class="code-container">
+            <div id="code-container">
                 <textarea id="code" readonly></textarea>
                 <div class="button">
-                    <button id="copy-button">Copy button</button>
-                    <button id="rest-button">Reset</button>
+                    <button id="copy-button">Copy Code</button>
+                    <button id="reset-button">Reset</button>
                 </div>
+
             </div>
         </div>
+
+    </div>
     </div>
 </body>
 
